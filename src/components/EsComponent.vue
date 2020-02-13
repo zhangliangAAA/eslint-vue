@@ -25,11 +25,11 @@
 <script>
 export default {
   props: ['flag', 'title'],
-  data() {
+  data () {
     return {};
   },
   methods: {
-    ok() {
+    ok () {
       // eslint-disable-next-line no-alert
       alert(23);
       if (this.title === 1) {
@@ -38,7 +38,7 @@ export default {
       }
       this.$emit('update:flag', false);
     },
-    cancel() {
+    cancel () {
       this.$emit('update:flag', false);
     }
   }
