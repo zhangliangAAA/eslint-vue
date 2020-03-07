@@ -10,9 +10,11 @@ npm run dev
 
 
 # 配置VSCode保存格式化
-1. 安装插件 eslint、prettier、vetur
-2. 创建 .eslintrc.json 或者 .eslintrc.js
-3. vscode setting.json
+1. VScode安装插件 eslint、prettier、vetur
+2. 项目安装依赖
+> npm i eslint eslint-config-standard eslint-friendly-formatter eslint-loader eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard eslint-plugin-vue -D
+3. 创建 .eslintrc.json 或者 .eslintrc.js 并编写规则
+4. vscode setting.json
 ```json
 // "eslint.autoFixOnSave": true, //注：已经废弃
 // 下面两项一般配合使用，也就是没有eslint规则时，使用自定义的格式化

@@ -24,24 +24,24 @@
 
 <script>
 export default {
-  props: ['flag', 'title'],
-  data () {
-    return {};
-  },
-  methods: {
-    ok () {
-      // eslint-disable-next-line no-alert
-      alert(23);
-      if (this.title === 1) {
-        // eslint-disable-next-line no-console
-        console.log('gg');
-      }
-      this.$emit('update:flag', false);
+    props: ['flag', 'title'],
+    data () {
+        return {};
     },
-    cancel () {
-      this.$emit('update:flag', false);
+    methods: {
+        ok () {
+            // eslint-disable-next-line no-alert
+            alert(23);
+            if (this.title === 1) {
+                // eslint-disable-next-line no-console
+                console.log('gg');
+            }
+            this.$emit('update:flag', false);
+        },
+        cancel () {
+            this.$emit('update:flag', false);
+        }
     }
-  }
 };
 </script>
 t>
